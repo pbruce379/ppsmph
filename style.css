@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fab2ff;
+   
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #FED1E2; /* Semi-transparent background */
+    background-image: url('3back.jpg'); /* Replace with your new background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    backdrop-filter: blur(10px); /* Adds a blur effect for better readability */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px; /* Elliptical shape */
+    border: none;
+    background-color: #5D3584; /* Tomato color */
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #5D3584; /* Darker tomato color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+h1 {
+    color: #5D3584;
+    font-size: 48px;
+}
+
+h2 {
+    color: #5D3584;
+}
+
+p{
+    color: #5D3584;
+}
+.content-section {
+    display: none; /* Hide sections by default */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.content-section.active {
+    display: block;
+    opacity: 1;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery div {
+    flex: 1 1 calc(33% - 10px);
+    box-sizing: border-box;
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.gallery p {
+    font-size: 16px;
+    margin: 10px 0 0;
+}
+
+#loveLetter {
+    font-size: 18px;
+    color: #5D3584; /* Tomato color */
+    margin-top: 20px;
+}
+
+#countDisplay {
+    font-size: 24px;
+    color: #5D3584; /* Green color */
+}
+
+<style>
+.content-section {
+    display: none; /* Hide all sections by default */
+}
+.content-section.active {
+    display: block; /* Show the active section */
+}
+@media only screen and (min-width: 768px) {
+    .content-section {
+        display: block; /* Show all sections on larger screens */
+    }
+}
+</style>
+
